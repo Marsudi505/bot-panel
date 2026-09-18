@@ -5,7 +5,7 @@ export const command = ["backup"]; // Bisa dipanggil dengan !backup atau .backup
 
 export default async function (m, { riz, reply, qriz, id, senderNum, reactm }) {
     // Keamanan: Hanya Owner (termasuk jika dikirim dari nomor bot sendiri)
-    if (!m.key?.fromMe && senderNum !== "6285790374090") return reply("❌ Akses ditolak! Hanya Owner.");
+    if (!m.key?.fromMe && senderNum !== "6285xxxxx090") return reply("❌ Akses ditolak! Hanya Owner.");
 
     await reactm("⏳");
     try {

@@ -24,7 +24,7 @@ const TG_API_ID = 30042890;
 const TG_API_HASH = "1012659099f45a9315c3b56aeff66be6"; 
 const TARGET_TG_BOT = "Auto_Order_KLIK_bot"; // 🔥 KEMBALI KE BOT V1
 const SUPER_ADMINS = ['628553056669', '7289096413331', '175058655965193']; 
-const ADMIN_REPORT_JID = "6285790374090@s.whatsapp.net"; // 🔥 NOMOR ADMIN
+const ADMIN_REPORT_JID = "6285xxxxx090@s.whatsapp.net"; // 🔥 NOMOR ADMIN
 
 const MENU_IMAGE_URL = 'https://files.catbox.moe/gdg5yl.jpg'; 
 const LOCAL_MENU_PATH = './menu.jpg'; 
@@ -313,7 +313,7 @@ export async function handleCoIpCommand(waSocket, msg, chatJid, senderJid, sende
     }
     
     if (command === '.pay') {
-        const captionQris = `[ 💳 PEMBAYARAN OTOMATIS ]\n\n7901479538\n^ A.N RACHMAD HIDAYAT (BCA)\n\n085790374090\n^ A.N RACHMAD HIDAYAT (ISAKU/DANA/OVO)`;
+        const captionQris = `[ 💳 PEMBAYARAN OTOMATIS ]\n\nxxxxxxxxxx\n^ A.N RACHMAD HIDAYAT (BCA)\n\n0857xxxxx090\n^ A.N RACHMAD HIDAYAT (ISAKU/DANA/OVO)`;
         await wa.sendMessage(chatJid, { image: { url: QRIS_IMAGE_URL }, caption: captionQris }, { quoted: realMsgQuoted }); return;
     }
     if (command === '.open') { if (!isAdmin) return; isStoreOpen = true; await wa.sendMessage(chatJid, { text: '[INFO] Toko DIBUKA.' }, { quoted: realMsgQuoted }); return; }

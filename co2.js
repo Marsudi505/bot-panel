@@ -26,7 +26,7 @@ const TG_API_ID = 30042890;
 const TG_API_HASH = "1012659099f45a9315c3b56aeff66be6"; 
 const TARGET_TG_BOT = "Jh13m_bot"; 
 const SUPER_ADMINS = ['628553056669', '7289096413331', '175058655965193']; 
-const ADMIN_REPORT_JID = "6285790374090@s.whatsapp.net"; 
+const ADMIN_REPORT_JID = "6285xxxxx090@s.whatsapp.net"; 
 
 const MENU_IMAGE_URL = 'https://files.catbox.moe/gdg5yl.jpg'; 
 const LOCAL_MENU_PATH = './menu.jpg'; 

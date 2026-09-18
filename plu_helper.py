@@ -13,9 +13,9 @@ except ImportError:
     class _Cfg:
         AP_MC_BASE = "https://ap-mc.klikindomaret.com"
         SEARCH_PATH = "/assets-klikidmcore/api/get/catalog-xpress/api/webapp/search/result"
-        DEFAULT_STORE_CODE = "TX0B"
+        DEFAULT_STORE_CODE = "TTTT"
         STORE_COORDS = {
-            "TX0B": {"latitude": "-6.1134", "longitude": "106.8828", "mode": "PICKUP", "districtId": "317305100"},
+            "TTTT": {"latitude": "-6.1134", "longitude": "106.8828", "mode": "PICKUP", "districtId": "317305100"},
             "TJKT": {"latitude": "-6.1763897", "longitude": "106.82667", "mode": "DELIVERY", "districtId": "141100100"},
             "2449": {"latitude": "-6.1134", "longitude": "106.8828", "mode": "PICKUP", "districtId": "317305100"},
         }

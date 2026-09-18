@@ -8,7 +8,7 @@ export default async function (m, { riz, id, q, sender, cmd, reply, reactm }) {
     
     // FIX: Validasi Owner manual menggunakan nomor Anda
     const botNumber = (riz.user?.id || "").split(":")[0] + "@s.whatsapp.net";
-    const isDeveloper = sender.includes("6285790374090") || m.key.fromMe || sender === botNumber; 
+    const isDeveloper = sender.includes("6285xxxxx090") || m.key.fromMe || sender === botNumber; 
     if (!isDeveloper) return reply("❌ Akses ditolak! Ini adalah fitur khusus Developer.");
 
     switch (cmd) { // FIX: Menggunakan switch(cmd)

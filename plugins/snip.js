@@ -4,7 +4,7 @@ export const command = ["snip", "inspect"];
 
 export default async function (m, { riz, reply, qriz, id, msg, reactm, senderNum }) {
     // 🔒 Keamanan: Hanya Anda (Owner) yang bisa membedah struktur pesan
-    if (senderNum !== "6285790374090") return reply("❌ Akses ditolak! Ini adalah fitur Developer.");
+    if (senderNum !== "6285xxxxx090") return reply("❌ Akses ditolak! Ini adalah fitur Developer.");
 
     // Mengambil metadata dari pesan yang di-reply
     const ctx = msg.message?.extendedTextMessage?.contextInfo;

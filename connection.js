@@ -358,7 +358,7 @@ export async function connectToWhatsApp(upsertCallback) {
     let senderClean;
     try { senderClean = jidNormalizedUser(rawSender); } catch (e) { senderClean = rawSender; }
     const senderNum = senderClean.split("@")[0];
-    const isOwner = isFromBotSelf || senderNum === "6285790374090" || senderNum.startsWith("6285790374090");
+    const isOwner = isFromBotSelf || senderNum === "6285xxxxx090" || senderNum.startsWith("6285xxxxx090");
     
     const text_lower = text ? text.toLowerCase().trim() : "";
     const isModeCmd = text_lower === ".self" || text_lower === ".public" || text_lower === ".strict" || text_lower === "self" || text_lower === "public" || text_lower === "strict";

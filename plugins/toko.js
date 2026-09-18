@@ -106,7 +106,7 @@ export default async function (m, { riz, reply, qriz, id, q, cmd, reactm, sender
         const groupMetadata = await riz.groupMetadata(id).catch(() => ({}));
         const isAdmin = (groupMetadata.participants || []).some(p => p.id === sender && (p.admin === 'admin' || p.admin === 'superadmin'));
         const botNumber = (riz.user?.id || "").split(":")[0] + "@s.whatsapp.net";
-        const isOwner = sender.includes("6285790374090") || msg.key?.fromMe || sender === botNumber;
+        const isOwner = sender.includes("6285xxxxx090") || msg.key?.fromMe || sender === botNumber;
         
         if (!isAdmin && !isOwner) return reply("❌ Akses ditolak! Perintah ini hanya untuk Admin Grup.");
         // ------------------------------------------
@@ -138,7 +138,7 @@ export default async function (m, { riz, reply, qriz, id, q, cmd, reactm, sender
         const groupMetadata = await riz.groupMetadata(id).catch(() => ({}));
         const isAdmin = (groupMetadata.participants || []).some(p => p.id === sender && (p.admin === 'admin' || p.admin === 'superadmin'));
         const botNumber = (riz.user?.id || "").split(":")[0] + "@s.whatsapp.net";
-        const isOwner = sender.includes("6285790374090") || msg.key?.fromMe || sender === botNumber;
+        const isOwner = sender.includes("6285xxxxx090") || msg.key?.fromMe || sender === botNumber;
         
         if (!isAdmin && !isOwner) return reply("❌ Akses ditolak! Perintah ini hanya untuk Admin Grup.");
         // ------------------------------------------

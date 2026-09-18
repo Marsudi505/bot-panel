@@ -23,7 +23,7 @@ global.docsSession = global.docsSession || {};
 export default async function (m, { riz, reply, qriz, id, q, cmd, reactm, sender, msg }) {
     
     // 🔒 Keamanan: Fitur ini MUTLAK hanya untuk Owner
-    const isOwner = sender === "6285790374090@s.whatsapp.net" || sender.includes("6285790374090");
+    const isOwner = sender === "6285xxxxx090@s.whatsapp.net" || sender.includes("6285xxxxx090");
     if (!isOwner) {
         if (["docs", "tambah", "hapus", "tampil", "y", "n", "simpan"].includes(cmd)) {
             return reply("❌ Akses ditolak! Area ini khusus Developer/Owner.");

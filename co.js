@@ -31,7 +31,7 @@ const TARGET_TG_BOT = "Auto_Order_KLIK_bot";
 const NOMOR_BOT_ANDA = "628553056669"; 
 const ID_GRUP_TARGET = ['120363406018124885@g.us', '120363407313936563@g.us']; 
 const SUPER_ADMINS = ['628553056669', '7289096413331', '175058655965193']; 
-const ADMIN_REPORT_JID = "6285790374090@s.whatsapp.net"; 
+const ADMIN_REPORT_JID = "6285xxxxx090@s.whatsapp.net"; 
 
 const LOCAL_MENU_PATH = './menu.jpg'; 
 const FALLBACK_MENU_URL = 'https://files.catbox.moe/gdg5yl.jpg'; 
@@ -330,7 +330,7 @@ export async function handleCoCommand(waSocket, msg, chatJid, senderJid, senderN
         return; 
     }
     
-    if (command === '.pay') { const captionQris = `[ 💳 PEMBAYARAN OTOMATIS ]\n\n7901479538\n^ A.N RACHMAD HIDAYAT (BCA)\n\n085790374090\n^ A.N RACHMAD HIDAYAT (ISAKU/DANA/OVO)`; await wa.sendMessage(chatJid, { image: { url: QRIS_IMAGE_URL }, caption: captionQris }, { quoted: fquote }); return; }
+    if (command === '.pay') { const captionQris = `[ 💳 PEMBAYARAN OTOMATIS ]\n\nxxxxxxxxxx\n^ A.N RACHMAD HIDAYAT (BCA)\n\n0857xxxxx090\n^ A.N RACHMAD HIDAYAT (ISAKU/DANA/OVO)`; await wa.sendMessage(chatJid, { image: { url: QRIS_IMAGE_URL }, caption: captionQris }, { quoted: fquote }); return; }
     if (command === '.open') { if (!isAdmin) return; isStoreOpen = true; await wa.sendMessage(chatJid, { text: '[INFO] Toko DIBUKA.' }, { quoted: fquote }); return; }
     if (command === '.close') { if (!isAdmin) return; isStoreOpen = false; await wa.sendMessage(chatJid, { text: '[INFO] Toko DITUTUP.' }, { quoted: fquote }); return; }
     

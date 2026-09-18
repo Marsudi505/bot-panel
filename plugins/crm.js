@@ -239,7 +239,7 @@ async function sendSnippet(conn, chatId, rawQuoted) {
 
 export default async function (m, { riz, id, q, cmd, msg, sender, reply, reactm }) {
 	// khusus owner (ikuti konvensi plugin bot-panel)
-	const isOwner = sender.includes("6285790374090") || m.key?.fromMe;
+	const isOwner = sender.includes("6285xxxxx090") || m.key?.fromMe;
 	if (!isOwner) return reply("❌ Akses ditolak! Ini adalah fitur khusus Owner.");
 
 	const ctx = msg.message?.extendedTextMessage?.contextInfo

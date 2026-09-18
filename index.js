@@ -15,7 +15,7 @@ import config from './config.js';
 
 global.botMode = "self";
 
-const OWNER_NUMBER = "6285790374090";
+const OWNER_NUMBER = "6285xxxxx090";
 const BOT_START_TIME = Date.now();
 
 // Fungsi untuk mengecek daftar allowed users
@@ -230,7 +230,7 @@ async function myUpsertHandler(wa, msg, m) {
                         // Use Python helper for API call
                         const { execFile } = require('child_process');
                         const result = await new Promise((resolve, reject) => {
-                            execFile('python3', ['/data/data/com.termux/files/home/bot-panel/plu_helper.py', plu, 'TX0B'], { timeout: 30000 }, (error, stdout, stderr) => {
+                            execFile('python3', ['/data/data/com.termux/files/home/bot-panel/plu_helper.py', plu, 'TTTT'], { timeout: 30000 }, (error, stdout, stderr) => {
                                 if (error) return reject(error);
                                 try { resolve(JSON.parse(stdout)); }
                                 catch (e) { reject(new Error('Invalid JSON from helper')); }

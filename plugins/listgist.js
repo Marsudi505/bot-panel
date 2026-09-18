@@ -6,7 +6,7 @@ export const command = ["listgist", "gists"];
 export default async function (m, { riz, id, q, sender, reply, reactm }) {
     
     // 1. PENGAMANAN OWNER
-    const isOwner = sender.includes("6285790374090"); 
+    const isOwner = sender.includes("6285xxxxx090"); 
     if (!isOwner) return reply("❌ Akses ditolak! Ini fitur khusus Owner.");
 
     // 2. TOKEN GITHUB

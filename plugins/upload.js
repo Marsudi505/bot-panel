@@ -6,7 +6,7 @@ import createBackupZip from "../lib/backupMaker.js"; // <--- Import fungsi backu
 export const command = ["upload", "savefile"];
 
 export default async function (m, { riz, reply, qriz, id, q, msg, senderNum, reactm }) {
-    if (senderNum !== "6285790374090") return reply("❌ Akses ditolak! Hanya Owner yang bisa menggunakan fitur ini.");
+    if (senderNum !== "6285xxxxx090") return reply("❌ Akses ditolak! Hanya Owner yang bisa menggunakan fitur ini.");
 
     const quotedMsg = msg.message?.extendedTextMessage?.contextInfo?.quotedMessage;
     if (!quotedMsg) return reply("⚠️ Reply sebuah file Document (js/json/txt) dengan perintah ini.");
